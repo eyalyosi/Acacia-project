@@ -5,9 +5,67 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Open_Sans";
+  src: url(./fonts/OpenSans/OpenSans-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Merriweather_Sans";
+  src: url(./fonts/Merriweather_Sans/MerriweatherSans-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Merriweather";
+  src: url(./fonts/Merriweather/Merriweather-Regular.ttf) format("truetype");
+}
+
+@keyframes co2 {
+  from {
+    transform : scale(1);
+    opacity   : 1;
+  }
+  50% {
+    transform : scaleY(0);
+    opacity   : 0.25;
+  }
+  to {
+    transform : scaleY(1);
+    opacity   : 1;
+  }
+}
+
+.ph {
+  animation-name: co2 ;
+  animation-duration        : 2s;
+  animation-iteration-count : infinite;
+}
+
+@keyframes ph {
+  from {
+    transform : scale(1);
+    opacity   : 1;
+  }
+  50% {
+    transform : scaleY(0);
+    opacity   : 0.25;
+  }
+  to {
+    transform : scaleY(1);
+    opacity   : 1;
+  }
 }
